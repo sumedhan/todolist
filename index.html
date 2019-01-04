@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>To Do List</title>
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "stylesheet.css" />
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="list.js"></script>
+</head>
+<body>
+  <div id="instructions">
+    <h1>We love lists!</h1>
+    <h2>Enter the work you need to get done. </h2>
+    <h3>Do the work and mark complete</h3>
+  </div>
+
+  <div id = "input">
+
+    <input id="listitem" type="text" placeholder="New item..." maxlength="100">
+    <button id="submitbutton" type = "submit">Go</button>
+
+  </div>
+
+  <div id = "todo">
+    <ul id = "todolist">
+    </ul>
+  </div>
+</body>
+</html>

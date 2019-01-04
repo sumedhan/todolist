@@ -1,0 +1,68 @@
+body {
+  background-color: #2EC4B6;
+  display: flex;
+  flex-direction: column;
+  font-family: Courier New;
+  align-items: center;
+}
+h1, h2, h3  {
+  color: #5D2E8C;
+}
+#input {
+  height: 50px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+#listitem {
+  color: black;
+  font-size: 14pt;
+  width: 80%;
+  padding: 5px;
+}
+#submitbutton {
+  background-color: #5D2E8C;
+  cursor: pointer;
+  font-weight:    bold;
+  border: 1px solid;
+  padding:    10px 30px;
+  float:right;
+}
+
+#todo {
+  width: 500px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: block;
+}
+
+/* Style the list items */
+ul li {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+}
+
+/* Add a light grey background color on hover */
+ul li:hover {
+  background-color: #eee;
+}
+
+/* Style the close button (span) */
+.close {
+  cursor: pointer;
+  float:  right;
+  margin-left: 20px;
+
+}
+
+.close:hover {background: #bbb;}
