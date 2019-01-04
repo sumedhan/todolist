@@ -1,4 +1,6 @@
 $( document ).ready(function() {
+
+// Moves the input item to the list and resets input field to default
 var count = 0;
 $("#submitbutton").click(function(){
     var listItem = $("#listitem").val();
@@ -14,17 +16,23 @@ $("#submitbutton").click(function(){
     $("#item"+count).append(closeButton);
     $("#listitem").val("");
     count++;
-
     });
+
+// Allows user to hit enter instead of clicking the add button
 $('#listitem').keypress(function(e){
-        if(e.which == 13){//Enter key pressed
-            $('#submitbutton').click();//Trigger search button click event
+        if(e.which == 13){ // enter keypress code is 13
+            $('#submitbutton').click();
         }
     });
 
-
+// Removes the deleted list items from the display
 $(document).on('click','.close', function(){
-        $(this).parent().fadeOut('slow');
+        $(this).parent().slideUp('slow');
+      });
+
+// strikes out completed items by changing the class
+$(document).on('click','li', function(){
+        $(this).toggleClass("strikeOut");
       });
 
 

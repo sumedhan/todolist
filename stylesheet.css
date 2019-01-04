@@ -1,12 +1,13 @@
 body {
-  background-color: #2EC4B6;
+  background-color: #F0EFF4;
   display: flex;
   flex-direction: column;
-  font-family: Courier New;
+  font-family: Georgia;
   align-items: center;
 }
 h1, h2, h3  {
-  color: #5D2E8C;
+  color: #FF4365;
+  text-align: center;
 }
 #input {
   height: 50px;
@@ -22,12 +23,12 @@ h1, h2, h3  {
   padding: 5px;
 }
 #submitbutton {
-  background-color: #5D2E8C;
+  background-color: #FF4365;
   cursor: pointer;
   font-weight:    bold;
-  border: 1px solid;
   padding:    10px 30px;
   float:right;
+  font-size: 14pt;
 }
 
 #todo {
@@ -41,28 +42,35 @@ ul {
   display: block;
 }
 
-/* Style the list items */
+
 ul li {
   border: 1px solid #ddd;
-  margin-top: -1px; /* Prevent double borders */
-  background-color: #f6f6f6;
+  margin-top: -1px;
+  background-color: #FBFEF9;
   padding: 12px;
   text-decoration: none;
   font-size: 18px;
   color: black;
+  color:#FF4365;
 }
 
-/* Add a light grey background color on hover */
+
 ul li:hover {
-  background-color: #eee;
+  background-color: #9BC1BC;
+  color: #FFF;
+  cursor: pointer;
 }
 
 /* Style the close button (span) */
 .close {
   cursor: pointer;
   float:  right;
-  margin-left: 20px;
-
+  font-size: 15px;
 }
 
-.close:hover {background: #bbb;}
+.strikeOut {
+  text-decoration: line-through;
+  background-color: #9BC1BC;
+  color: #C5EFCB;
+
+}
